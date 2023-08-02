@@ -1,0 +1,11 @@
+  [Unit]
+  Description=Script for retranslation posts from VK to TO
+
+  [Service]
+  Restart=always
+  User=root
+  WorkingDirectory=/app
+  ExecStart=python3.9.10 /app/script.py
+
+  [Install]
+  WantedBy=multi-user.target
