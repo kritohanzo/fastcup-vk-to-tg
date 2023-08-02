@@ -1,0 +1,1 @@
+# fastcup-vk-to-tg
