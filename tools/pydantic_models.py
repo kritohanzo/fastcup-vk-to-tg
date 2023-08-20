@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List, Optional, Union
 
 class Id(BaseModel):
     id: int
@@ -14,7 +14,7 @@ class Photo(BaseModel):
     sizes: List[Size]
 
 class Attachment(BaseModel):
-    photo: Photo
+    photo: Optional[Photo] = None
 
 class Item(BaseModel):
     id: int

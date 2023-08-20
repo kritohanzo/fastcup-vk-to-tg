@@ -1,5 +1,5 @@
 from sqlalchemy import create_engine
-from sqlalchemy import  Column, Integer, String
+from sqlalchemy import  Column, Integer, String, JSON
 from sqlalchemy.orm import DeclarativeBase
 import os
 from sqlalchemy import create_engine
