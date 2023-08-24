@@ -19,7 +19,6 @@ def main(vk_parser, tg):
     while True:
         
         parsed_post = vk_parser.get_last_post()
-
         parsed_photo = [attachment.photo.sizes[-1].url for attachment in parsed_post.attachments if attachment.photo]
         if not parsed_photo:
             parsed_photo = ["https://sun9-1.userapi.com/impg/uXZRATmrzAcSGgZJtWv21kpGk4Hh-VqNl5Ojrg/cDoJkCzdiZQ.jpg?size=512x512&quality=95&sign=f372f3842854f059316051c07a93a681&type=album"]
