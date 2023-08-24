@@ -5,7 +5,7 @@ Description=Script for retranslation posts from VK to TO
 Restart=always
 User=root
 WorkingDirectory=/root
-ExecStart=/root/fastcup-vk-to-tg/venv/Scripts/python.exe /root/fastcup-vk-to-tg/script.py
+ExecStart=python3 /root/fastcup-vk-to-tg/script.py
 [Install]
 
 WantedBy=multi-user.target
